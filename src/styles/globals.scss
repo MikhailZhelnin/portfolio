@@ -1,0 +1,28 @@
+@use 'variables';
+@use 'mixins';
+@use 'fonts';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'MS_SANS';
+    cursor: url('/src/assets/window-95.cur'), auto;
+}
+
+body {
+    background-color: variables.$color-teal;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul li {
+    list-style-type: none;
+}
+
+// .container {
+//     @include mixins.container;
+// }

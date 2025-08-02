@@ -1,0 +1,13 @@
+@use '../../../styles/variables';
+
+.clock {
+    height: 50px;
+    width: 105px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: inherit;
+    box-shadow: inset -2px -2px 0 variables.$color-white, inset 2px 2px 0 variables.$color-black;
+}

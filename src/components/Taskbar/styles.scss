@@ -1,0 +1,19 @@
+@use '../../styles/variables';
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 63px;
+    padding: 5px 5px 0 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: variables.$color-light-gray;
+    box-shadow: inset 0px 2px 0 variables.$color-soft-gray, inset 0px 4px 0 variables.$color-white;
+
+    .taskList {
+        flex-grow: 1;
+    }
+}

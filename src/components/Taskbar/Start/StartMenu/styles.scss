@@ -1,0 +1,12 @@
+@use '../../../../styles/variables';
+
+.startMenu {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    width: 300px;
+    height: 500px;
+    padding: 4px;
+    background-color: variables.$color-light-gray;
+    box-shadow: inset -2px -2px 0 variables.$color-black, inset 2px 2px 0 variables.$color-white, inset -4px -4px 0 variables.$color-gray, inset 4px 4px 0 variables.$color-soft-gray;
+}

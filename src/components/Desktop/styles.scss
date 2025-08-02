@@ -1,0 +1,6 @@
+@use '../../styles/variables';
+
+.desktop {
+    display: flex;
+    height: calc(100vh - 63px);
+}

@@ -1,0 +1,35 @@
+@use '../../../styles/variables';
+
+.button {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: variables.$color-light-gray;
+    border: none;
+    box-shadow: inset -2px -2px 0 variables.$color-black, inset 2px 2px 0 variables.$color-white, inset -4px -4px 0 variables.$color-gray, inset 4px 4px 0 variables.$color-soft-gray;
+
+    &.button--active {
+        box-shadow: inset -2px -2px 0 variables.$color-white, inset 2px 2px 0 variables.$color-black, inset -4px -4px 0 variables.$color-light-gray, inset 4px 4px 0 variables.$color-gray;
+        background-color: #ffffff;
+        background-image:
+            linear-gradient(45deg, variables.$color-light-gray 25%, transparent 25%),
+            linear-gradient(-45deg, variables.$color-light-gray 25%, transparent 25%),
+            linear-gradient(45deg, transparent 75%, variables.$color-light-gray 75%),
+            linear-gradient(-45deg, transparent 75%, variables.$color-light-gray 75%);
+        background-size: 4px 4px;
+        background-position: 0 0, 0 2px, 2px -2px, -2px 0px;
+    }
+
+    .button__icon {
+        margin-right: 4px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .button__title {
+        margin-top: 2px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        font-family: inherit;
+    }
+}
